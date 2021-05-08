@@ -1,0 +1,6042 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Villamandos Gonzalo">
+	<link rel="shortcut icon" href="favicon.ico">
+    <title>Ingresos Brutos Chaco</title>
+	<style>
+		header {
+			text-align: center;
+		}
+		h2 {
+			text-align: center;
+			text-decoration: underline;
+			font-weight: bolder;
+			font-size: 6vh;
+		}
+		.searchbox{
+			width: 60vh;
+			height: 5vh;
+			font-size: 4vh;
+		}
+		::placeholder {
+			color: crimson;
+		}
+		table, th, td {
+			border: 1px solid black;
+		}}
+	</style>
+</head>
+<body>
+<header>
+	<img src="https://atp.chaco.gob.ar/images/page-4_img1.jpg" alt="">
+</header>
+<h2>Alicuota Ingresos Brutos Chaco</h2>
+<div>
+	<input class="searchbox" type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar código de actividad..." title="Colocar código">
+</div><br><br>
+<div>
+  <table id="myTable">
+	  <tr class="header">
+	    <th>Codigo</th>
+	    <th>Nombre</th>
+	    <th>Alicuota</th>
+	    <th>Observaciones</th>
+    </tr>
+	  <tr>
+	    <td>11111</td>
+	    <td>Cultivo de arroz</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11112</td>
+	    <td>Cultivo de trigo</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11119</td>
+	    <td>Cultivo de cereales n.c.p., excepto los de uso forrajero </td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11121</td>
+	    <td>Cultivo de maiz</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11129</td>
+	    <td>Cultivo de cereales de uso forrajero n.c.p.</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11130</td>
+	    <td>Cultivo de pastos de uso forrajero </td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11211</td>
+	    <td>Cultivo de soja</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11291</td>
+	    <td>Cultivo de girasol</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11299</td>
+	    <td>Cultivo de oleaginosas n.c.p. excepto soja y girasol</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11310</td>
+	    <td>Cultivo de papa, batata y mandioca</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11321</td>
+	    <td>Cultivo de tomate</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11329</td>
+	    <td>Cultivo de bulbos, brotes, raices y hortalizas de fruto n.c.p.</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11331</td>
+	    <td>Cultivo de hortalizas de hoja y de otras hortalizas frescas</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11341</td>
+	    <td>Cultivo de legumbres frescas</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11342</td>
+	    <td>Cultivo de legumbres secas</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11400</td>
+	    <td>Cultivo de tabaco</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11501</td>
+	    <td>Cultivo de algodon</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11509</td>
+	    <td>Cultivo de plantas para la obtencion de fibras n.c.p.</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11911</td>
+	    <td>Cultivo de flores</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11912</td>
+	    <td>Cultivo de plantas ornamentales</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>11990</td>
+	    <td>Cultivos temporales n.c.p.</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12110</td>
+	    <td>Cultivo de vid para vinificar </td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12121</td>
+	    <td>Cultivo de uva de mesa</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12200</td>
+	    <td>Cultivo de frutas citricas</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12311</td>
+	    <td>Cultivo de manzana y pera</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12319</td>
+	    <td>Cultivo de frutas de pepita n.c.p.</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12320</td>
+	    <td>Cultivo de frutas de carozo</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12410</td>
+	    <td>Cultivo de frutas tropicales y subtropicales</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12420</td>
+	    <td>Cultivo de frutas secas</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12490</td>
+	    <td>Cultivo de frutas n.c.p.</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12510</td>
+	    <td>Cultivo de caña de azucar</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12591</td>
+	    <td>Cultivo de stevia rebaudiana</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12599</td>
+	    <td>Cultivo de plantas sacariferas n.c.p.</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12601</td>
+	    <td>Cultivo de jatropha</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12609</td>
+	    <td>Cultivo de frutos oleaginosos excepto jatropha</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12701</td>
+	    <td>Cultivo de yerba mate</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12709</td>
+	    <td>Cultivo de te y otras plantas cuyas hojas se utilizan para preparar infusiones</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12800</td>
+	    <td>Cultivo de especias y de plantas aromaticas y medicinales</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>12900</td>
+	    <td>Cultivos perennes n.c.p.</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>13011</td>
+	    <td>Produccion de semillas hibridas de cereales y oleaginosas </td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>13012</td>
+	    <td>Produccion de semillas varietales o autofecundadas de cereales, oleaginosas, y forrajeras </td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>13013</td>
+	    <td>Produccion de semillas de hortalizas y legumbres, flores y plantas ornamentales y arboles frutales </td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>13019</td>
+	    <td>Produccion de semillas de cultivos agricolas n.c.p.</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>13020</td>
+	    <td>Produccion de otras formas de propagacion de cultivos agricolas </td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14113</td>
+	    <td>Cria de ganado bovino, excepto la realizada en cabañas y para la produccion de leche</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14114</td>
+	    <td>Invernada de ganado bovino excepto el engorde en corrales (Feed-Lot)</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14115</td>
+	    <td>Engorde en corrales (Feed-Lot)</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14121</td>
+	    <td>Cria de ganado bovino realizada en cabañas</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14211</td>
+	    <td>Cria de ganado equino, excepto la realizada en haras</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14221</td>
+	    <td>Cria de ganado equino realizada en haras</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14300</td>
+	    <td>Cria de camelidos</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14410</td>
+	    <td>Cria de ganado ovino -excepto en cabañas y para la produccion de lana y leche-</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14420</td>
+	    <td>Cria de ganado ovino realizada en cabañas</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14430</td>
+	    <td>Cria de ganado caprino -excepto la realizada en cabañas y para produccion de pelos y de leche-</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14440</td>
+	    <td>Cria de ganado caprino realizada en cabañas</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14510</td>
+	    <td>Cria de ganado porcino, excepto la realizada en cabañas</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14520</td>
+	    <td>Cria de ganado porcino realizado en cabañas</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14610</td>
+	    <td>Produccion de leche bovina</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14620</td>
+	    <td>Produccion de leche de oveja y de cabra</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14710</td>
+	    <td>Produccion de lana y pelo de oveja y cabra (cruda)</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14720</td>
+	    <td>Produccion de pelos de ganado n.c.p.</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14810</td>
+	    <td>Cria de aves de corral, excepto para la produccion de huevos</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14820</td>
+	    <td>Produccion de huevos</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14910</td>
+	    <td>Apicultura</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14920</td>
+	    <td>Cunicultura</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14930</td>
+	    <td>Cria de animales peliferos, piliferos y plumiferos, excepto de las especies ganaderas</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>14990</td>
+	    <td>Cria de animales y obtencion de productos de origen animal, n.c.p.</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>16111</td>
+	    <td>Servicios de labranza, siembra, transplante y cuidados culturales</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>16112</td>
+	    <td>Servicios de pulverizacion, desinfeccion y fumigacion terrestre</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>16113</td>
+	    <td>Servicios de pulverizacion, desinfeccion y fumigacion aerea </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>16119</td>
+	    <td>Servicios de maquinaria agricola n.c.p., excepto los de cosecha mecanica</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>16120</td>
+	    <td>Servicios de cosecha mecanica </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>16130</td>
+	    <td>Servicios de contratistas de mano de obra agricola </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>16141</td>
+	    <td>Servicios de frio y refrigerado</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>16149</td>
+	    <td>Otros servicios de post cosecha</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>16150</td>
+	    <td>Servicios de procesamiento de semillas para su siembra</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>16190</td>
+	    <td>Servicios de apoyo agricolas n.c.p</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>16210</td>
+	    <td>Inseminacion artificial y servicios n.c.p. para mejorar la reproduccion de los animales y el rendimiento de sus productos </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>16220</td>
+	    <td>Servicios de contratistas de mano de obra pecuaria</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>16230</td>
+	    <td>Servicios de esquila de animales</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>16291</td>
+	    <td>Servicios para el control de plagas, baños parasiticidas, etc.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>16292</td>
+	    <td>Albergue y cuidado de animales de terceros</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>16299</td>
+	    <td>Servicios de apoyo pecuarios n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>17010</td>
+	    <td>Caza y repoblacion de animales de caza </td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>17020</td>
+	    <td>Servicios de apoyo para la caza</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>21010</td>
+	    <td>Plantacion de bosques</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>21020</td>
+	    <td>Repoblacion y conservacion de bosques nativos y zonas forestadas</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>21030</td>
+	    <td>Explotacion de viveros forestales </td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>22010</td>
+	    <td>Extraccion de productos forestales de bosques cultivados</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>22020</td>
+	    <td>Extraccion de productos forestales de bosques nativos</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>24010</td>
+	    <td>Servicios forestales para la extraccion de madera</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>24020</td>
+	    <td>Servicios forestales excepto los servicios para la extraccion de madera</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>31110</td>
+	    <td>Pesca de organismos marinos; excepto cuando es realizada en buques procesadores</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>31120</td>
+	    <td>Pesca y elaboracion de productos marinos realizada a bordo de buques procesadores</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>31130</td>
+	    <td>Recoleccion de organismos marinos excepto peces, crustaceos y moluscos</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>31200</td>
+	    <td>Pesca continental: fluvial y lacustre</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>31300</td>
+	    <td>Servicios de apoyo para la pesca</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>32000</td>
+	    <td>Explotacion de criaderos de peces, granjas piscicolas y otros frutos acuaticos (acuicultura)</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>51000</td>
+	    <td>Extraccion y aglomeracion de carbon</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>52000</td>
+	    <td>Extraccion y aglomeracion de lignito</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>61000</td>
+	    <td>Extraccion de petroleo crudo</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>62000</td>
+	    <td>Extraccion de gas natural</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>71000</td>
+	    <td>Extraccion de minerales de hierro</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>72100</td>
+	    <td>Extraccion de minerales y concentrados de uranio y torio</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>72910</td>
+	    <td>Extraccion de metales preciosos</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>72990</td>
+	    <td>Extraccion de minerales metaliferos no ferrosos n.c.p., excepto minerales de uranio y torio</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>81100</td>
+	    <td>Extraccion de rocas ornamentales</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>81200</td>
+	    <td>Extraccion de piedra caliza y yeso</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>81300</td>
+	    <td>Extraccion de arenas, canto rodado y triturados petreos</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>81400</td>
+	    <td>Extraccion de arcilla y caolin</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>89110</td>
+	    <td>Extraccion de minerales para la fabricacion de abonos excepto turba</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>89120</td>
+	    <td>Extraccion de minerales para la fabricacion de productos quimicos</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>89200</td>
+	    <td>Extraccion y aglomeracion de turba</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>89300</td>
+	    <td>Extraccion de sal </td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>89900</td>
+	    <td>Explotacion de minas y canteras n.c.p.</td>
+	    <td>0.75</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>91001</td>
+	    <td>Actividades de servicios y construccion previas a la perforacion de pozos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>91002</td>
+	    <td>Actividades de servicios y construccion durante la perforacion de pozos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>91003</td>
+	    <td>Actividades de servicios y construccion posteriores a la perforacion de pozos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>91009</td>
+	    <td>Actividades de servicios relacionadas con la extraccion de petroleo y gas, no clasificados en otra parte</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>99000</td>
+	    <td>Servicios de apoyo para la mineria, excepto para la extraccion de petroleo y gas natural</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>101011</td>
+	    <td>Matanza de ganado bovino </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>101012</td>
+	    <td>Procesamiento de carne de ganado bovino</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>101013</td>
+	    <td>Saladero y peladero de cueros de ganado bovino</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>101020</td>
+	    <td>Produccion y procesamiento de carne de aves</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>101030</td>
+	    <td>Elaboracion de fiambres y embutidos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>101040</td>
+	    <td>Matanza de ganado excepto el bovino y procesamiento de su carne </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>101091</td>
+	    <td>Fabricacion de aceites y grasas de origen animal</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>101099</td>
+	    <td>Matanza de animales n.c.p. y procesamiento de su carne; elaboracion de subproductos carnicos n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>102001</td>
+	    <td>Elaboracion de pescados de mar, crustaceos y productos marinos </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>102002</td>
+	    <td>Elaboracion de pescados de rios y lagunas y otros productos fluviales y lacustres</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>102003</td>
+	    <td>Fabricacion de aceites, grasas, harinas y productos a base de pescados </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>103011</td>
+	    <td>Preparacion de conservas de frutas, hortalizas y legumbres</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>103012</td>
+	    <td>Elaboracion y envasado de dulces, mermeladas y jaleas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>103020</td>
+	    <td>Elaboracion de jugos naturales y sus concentrados, de frutas, hortalizas y legumbres</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>103030</td>
+	    <td>Elaboracion de frutas, hortalizas y legumbres congeladas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>103091</td>
+	    <td>Elaboracion de hortalizas y legumbres deshidratadas o desecadas; preparacion n.c.p. de hortalizas y legumbres</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>103099</td>
+	    <td>Elaboracion de frutas deshidratadas o desecadas; preparacion n.c.p. de frutas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>104011</td>
+	    <td>Elaboracion de aceites y grasas vegetales sin refinar</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>104012</td>
+	    <td>Elaboracion de aceite de oliva </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>104013</td>
+	    <td>Elaboracion de aceites y grasas vegetales refinados</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>104020</td>
+	    <td>Elaboracion de margarinas y grasas vegetales comestibles similares</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>105010</td>
+	    <td>Elaboracion de leches y productos lacteos deshidratados</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>105020</td>
+	    <td>Elaboracion de quesos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>105030</td>
+	    <td>Elaboracion industrial de helados</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>105090</td>
+	    <td>Elaboracion de productos lacteos n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>106110</td>
+	    <td>Molienda de trigo</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>106120</td>
+	    <td>Preparacion de arroz</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>106131</td>
+	    <td>Elaboracion de alimentos a base de cereales </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>106139</td>
+	    <td>Preparacion y molienda de legumbres y cereales n.c.p., excepto trigo y arroz y molienda humeda de maiz</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>106200</td>
+	    <td>Elaboracion de almidones y productos derivados del almidon; molienda humeda de maiz</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107110</td>
+	    <td>Elaboracion de galletitas y bizcochos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107121</td>
+	    <td>Elaboracion industrial de productos de panaderia, excepto galletitas y bizcochos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107129</td>
+	    <td>Elaboracion de productos de panaderia n.c.p. </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107200</td>
+	    <td>Elaboracion de azucar</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107301</td>
+	    <td>Elaboracion de cacao y chocolate </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107309</td>
+	    <td>Elaboracion de productos de confiteria n.c.p. </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107410</td>
+	    <td>Elaboracion de pastas alimentarias frescas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107420</td>
+	    <td>Elaboracion de pastas alimentarias secas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107500</td>
+	    <td>Elaboracion de comidas preparadas para reventa</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107911</td>
+	    <td>Tostado, torrado y molienda de cafe</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107912</td>
+	    <td>Elaboracion y molienda de hierbas aromaticas y especias</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107920</td>
+	    <td>Preparacion de hojas de te</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107931</td>
+	    <td>Molienda de yerba mate</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107939</td>
+	    <td>Elaboracion de yerba mate</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107991</td>
+	    <td>Elaboracion de extractos, jarabes y concentrados</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107992</td>
+	    <td>Elaboracion de vinagres</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>107999</td>
+	    <td>Elaboracion de productos alimenticios n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>108000</td>
+	    <td>Elaboracion de alimentos preparados para animales</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>109000</td>
+	    <td>Servicios industriales para la elaboracion de alimentos y bebidas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>110100</td>
+	    <td>Destilacion, rectificacion y mezcla de bebidas espiritosas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>110211</td>
+	    <td>Elaboracion de mosto</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>110212</td>
+	    <td>Elaboracion de vinos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>110290</td>
+	    <td>Elaboracion de sidra y otras bebidas alcoholicas fermentadas </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>110300</td>
+	    <td>Elaboracion de cerveza, bebidas malteadas y malta</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>110411</td>
+	    <td>Embotellado de aguas naturales y minerales</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>110412</td>
+	    <td>Fabricacion de sodas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>110420</td>
+	    <td>Elaboracion de bebidas gaseosas, excepto sodas y aguas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>110491</td>
+	    <td>Elaboracion de hielo</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>110492</td>
+	    <td>Elaboracion de bebidas no alcoholicas n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>120010</td>
+	    <td>Preparacion de hojas de tabaco</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>120091</td>
+	    <td>Elaboracion de cigarrillos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>120099</td>
+	    <td>Elaboracion de productos de tabaco n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>131110</td>
+	    <td>Preparacion de fibras textiles vegetales; desmotado de algodon</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>131120</td>
+	    <td>Preparacion de fibras animales de uso textil</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>131131</td>
+	    <td>Fabricacion de hilados textiles de lana, pelos y sus mezclas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>131132</td>
+	    <td>Fabricacion de hilados textiles de algodon y sus mezclas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>131139</td>
+	    <td>Fabricacion de hilados textiles n.c.p., excepto de lana y de algodon</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>131201</td>
+	    <td>Fabricacion de tejidos (telas) planos de lana y sus mezclas, incluye hilanderias y tejedurias integradas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>131202</td>
+	    <td>Fabricacion de tejidos (telas) planos de algodon y sus mezclas, incluye hilanderias y tejedurias integradas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>131209</td>
+	    <td>Fabricacion de tejidos (telas) planos de fibras textiles n.c.p., incluye hilanderias y tejedurias integradas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>131300</td>
+	    <td>Acabado de productos textiles</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>139100</td>
+	    <td>Fabricacion de tejidos de punto</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>139201</td>
+	    <td>Fabricacion de frazadas, mantas, ponchos, colchas, cobertores, etc.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>139202</td>
+	    <td>Fabricacion de ropa de cama y manteleria</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>139203</td>
+	    <td>Fabricacion de articulos de lona y sucedaneos de lona</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>139204</td>
+	    <td>Fabricacion de bolsas de materiales textiles para productos a granel</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>139209</td>
+	    <td>Fabricacion de articulos confeccionados de materiales textiles n.c.p., excepto prendas de vestir </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>139300</td>
+	    <td>Fabricacion de tapices y alfombras</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>139400</td>
+	    <td>Fabricacion de cuerdas, cordeles, bramantes y redes</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>139900</td>
+	    <td>Fabricacion de productos textiles n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>141110</td>
+	    <td>Confeccion de ropa interior, prendas para dormir y para la playa</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>141120</td>
+	    <td>Confeccion de ropa de trabajo, uniformes y guardapolvos </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>141130</td>
+	    <td>Confeccion de prendas de vestir para bebes y niños</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>141140</td>
+	    <td>Confeccion de prendas deportivas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>141191</td>
+	    <td>Fabricacion de accesorios de vestir excepto de cuero</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>141199</td>
+	    <td>Confeccion de prendas de vestir n.c.p., excepto prendas de piel, cuero y de punto</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>141201</td>
+	    <td>Fabricacion de accesorios de vestir de cuero</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>141202</td>
+	    <td>Confeccion de prendas de vestir de cuero</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>142000</td>
+	    <td>Terminacion y teñido de pieles; fabricacion de articulos de piel </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>143010</td>
+	    <td>Fabricacion de medias</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>143020</td>
+	    <td>Fabricacion de prendas de vestir y articulos similares de punto</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>149000</td>
+	    <td>Servicios industriales para la industria confeccionista</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>151100</td>
+	    <td>Curtido y terminacion de cueros</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>151200</td>
+	    <td>Fabricacion de maletas, bolsos de mano y similares, articulos de talabarteria y articulos de cuero n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>152011</td>
+	    <td>Fabricacion de calzado de cuero, excepto calzado deportivo y ortopedico </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>152021</td>
+	    <td>Fabricacion de calzado de materiales n.c.p., excepto calzado deportivo y ortopedico </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>152031</td>
+	    <td>Fabricacion de calzado deportivo</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>152040</td>
+	    <td>Fabricacion de partes de calzado</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>161001</td>
+	    <td>Aserrado y cepillado de madera nativa </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>161002</td>
+	    <td>Aserrado y cepillado de madera implantada</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>162100</td>
+	    <td>Fabricacion de hojas de madera para enchapado; fabricacion de tableros contrachapados; tableros laminados; tableros de particulas y tableros y paneles n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>162201</td>
+	    <td>Fabricacion de aberturas y estructuras de madera para la construccion</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>162202</td>
+	    <td>Fabricacion de viviendas prefabricadas de madera</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>162300</td>
+	    <td>Fabricacion de recipientes de madera</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>162901</td>
+	    <td>Fabricacion de ataudes</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>162902</td>
+	    <td>Fabricacion de articulos de madera en tornerias</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>162903</td>
+	    <td>Fabricacion de productos de corcho</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>162909</td>
+	    <td>Fabricacion de productos de madera n.c.p; fabricacion de articulos de paja y materiales trenzables</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>170101</td>
+	    <td>Fabricacion de pasta de madera</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>170102</td>
+	    <td>Fabricacion de papel y carton excepto envases</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>170201</td>
+	    <td>Fabricacion de papel ondulado y envases de papel</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>170202</td>
+	    <td>Fabricacion de carton ondulado y envases de carton</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>170910</td>
+	    <td>Fabricacion de articulos de papel y carton de uso domestico e higienico sanitario</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>170990</td>
+	    <td>Fabricacion de articulos de papel y carton n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>181101</td>
+	    <td>Impresion de diarios y revistas</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>181109</td>
+	    <td>Impresion n.c.p., excepto de diarios y revistas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>181200</td>
+	    <td>Servicios relacionados con la impresion</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>182000</td>
+	    <td>Reproduccion de grabaciones</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>191000</td>
+	    <td>Fabricacion de productos de hornos de coque</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>192001</td>
+	    <td>Fabricacion de productos de la refinacion del petroleo</td>
+	    <td>0.9</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>192002</td>
+	    <td>Refinacion del petroleo -Ley Nacional Nñ 23966-</td>
+	    <td>0.9</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>201110</td>
+	    <td>Fabricacion de gases industriales y medicinales comprimidos o licuados</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>201120</td>
+	    <td>Fabricacion de curtientes naturales y sinteticos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>201130</td>
+	    <td>Fabricacion de materias colorantes basicas, excepto pigmentos preparados</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>201140</td>
+	    <td>Fabricacion de combustible nuclear, sustancias y materiales radiactivos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>201180</td>
+	    <td>Fabricacion de materias quimicas inorganicas basicas n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>201191</td>
+	    <td>Produccion e industrializacion de metanol</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>201199</td>
+	    <td>Fabricacion de materias quimicas organicas basicas n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>201210</td>
+	    <td>Fabricacion de alcohol </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>201220</td>
+	    <td>Fabricacion de biocombustibles excepto alcohol</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>201300</td>
+	    <td>Fabricacion de abonos y compuestos de nitrogeno</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>201401</td>
+	    <td>Fabricacion de resinas y cauchos sinteticos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>201409</td>
+	    <td>Fabricacion de materias plasticas en formas primarias n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>202101</td>
+	    <td>Fabricacion de insecticidas, plaguicidas y productos quimicos de uso agropecuario </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>202200</td>
+	    <td>Fabricacion de pinturas, barnices y productos de revestimiento similares, tintas de imprenta y masillas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>202311</td>
+	    <td>Fabricacion de preparados para limpieza, pulido y saneamiento </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>202312</td>
+	    <td>Fabricacion de jabones y detergentes</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>202320</td>
+	    <td>Fabricacion de cosmeticos, perfumes y productos de higiene y tocador</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>202906</td>
+	    <td>Fabricacion de explosivos y productos de pirotecnia</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>202907</td>
+	    <td>Fabricacion de colas, adhesivos, aprestos y cementos excepto los odontologicos obtenidos de sustancias minerales y vegetales</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>202908</td>
+	    <td>Fabricacion de productos quimicos n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>203000</td>
+	    <td>Fabricacion de fibras manufacturadas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>204000</td>
+	    <td>Servicios industriales para la fabricacion de sustancias y productos quimicos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>210010</td>
+	    <td>Fabricacion de medicamentos de uso humano y productos farmaceuticos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>210020</td>
+	    <td>Fabricacion de medicamentos de uso veterinario</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>210030</td>
+	    <td>Fabricacion de sustancias quimicas para la elaboracion de medicamentos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>210090</td>
+	    <td>Fabricacion de productos de laboratorio y productos botanicos de uso farmaceutico n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>221110</td>
+	    <td>Fabricacion de cubiertas y camaras</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>221120</td>
+	    <td>Recauchutado y renovacion de cubiertas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>221901</td>
+	    <td>Fabricacion de autopartes de caucho excepto camaras y cubiertas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>221909</td>
+	    <td>Fabricacion de productos de caucho n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>222010</td>
+	    <td>Fabricacion de envases plasticos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>222090</td>
+	    <td>Fabricacion de productos plasticos en formas basicas y articulos de plastico n.c.p., excepto muebles</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>231010</td>
+	    <td>Fabricacion de envases de vidrio</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>231020</td>
+	    <td>Fabricacion y elaboracion de vidrio plano</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>231090</td>
+	    <td>Fabricacion de productos de vidrio n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>239100</td>
+	    <td>Fabricacion de productos de ceramica refractaria</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>239201</td>
+	    <td>Fabricacion de ladrillos </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>239202</td>
+	    <td>Fabricacion de revestimientos ceramicos </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>239209</td>
+	    <td>Fabricacion de productos de arcilla y ceramica no refractaria para uso estructural n.c.p. </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>239310</td>
+	    <td>Fabricacion de articulos sanitarios de ceramica</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>239391</td>
+	    <td>Fabricacion de objetos ceramicos para uso domestico excepto artefactos sanitarios</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>239399</td>
+	    <td>Fabricacion de articulos de ceramica no refractaria para uso no estructural n.c.p. </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>239410</td>
+	    <td>Elaboracion de cemento</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>239421</td>
+	    <td>Elaboracion de yeso</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>239422</td>
+	    <td>Elaboracion de cal</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>239510</td>
+	    <td>Fabricacion de mosaicos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>239591</td>
+	    <td>Elaboracion de hormigon</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>239592</td>
+	    <td>Fabricacion de premoldeadas para la construccion</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>239593</td>
+	    <td>Fabricacion de articulos de cemento, fibrocemento y yeso excepto hormigon y mosaicos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>239600</td>
+	    <td>Corte, tallado y acabado de la piedra</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>239900</td>
+	    <td>Fabricacion de productos minerales no metalicos n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>241001</td>
+	    <td>Laminacion y estirado. Produccion de lingotes, planchas o barras fabricadas por operadores independientes</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>241009</td>
+	    <td>Fabricacion en industrias basicas de productos de hierro y acero n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>242010</td>
+	    <td>Elaboracion de aluminio primario y semielaborados de aluminio</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>242090</td>
+	    <td>Fabricacion de productos primarios de metales preciosos y metales no ferrosos n.c.p. y sus semielaborados</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>243100</td>
+	    <td>Fundicion de hierro y acero</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>243200</td>
+	    <td>Fundicion de metales no ferrosos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>251101</td>
+	    <td>Fabricacion de carpinteria metalica</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>251102</td>
+	    <td>Fabricacion de productos metalicos para uso estructural</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>251200</td>
+	    <td>Fabricacion de tanques, depositos y recipientes de metal</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>251300</td>
+	    <td>Fabricacion de generadores de vapor</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>252000</td>
+	    <td>Fabricacion de armas y municiones</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>259100</td>
+	    <td>Forjado, prensado, estampado y laminado de metales; pulvimetalurgia</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>259200</td>
+	    <td>Tratamiento y revestimiento de metales y trabajos de metales en general </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>259301</td>
+	    <td>Fabricacion de herramientas manuales y sus accesorios</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>259302</td>
+	    <td>Fabricacion de articulos de cuchilleria y utensillos de mesa y de cocina</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>259309</td>
+	    <td>Fabricacion de cerraduras, herrajes y articulos de ferreteria n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>259910</td>
+	    <td>Fabricacion de envases metalicos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>259991</td>
+	    <td>Fabricacion de tejidos de alambre</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>259992</td>
+	    <td>Fabricacion de cajas de seguridad</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>259993</td>
+	    <td>Fabricacion de productos metalicos de torneria y/o matriceria</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>259999</td>
+	    <td>Fabricacion de productos elaborados de metal n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>261000</td>
+	    <td>Fabricacion de componentes electronicos </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>262000</td>
+	    <td>Fabricacion de equipos y productos informaticos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>263000</td>
+	    <td>Fabricacion de equipos de comunicaciones y transmisores de radio y television</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>264000</td>
+	    <td>Fabricacion de receptores de radio y television, aparatos de grabacion y reproduccion de sonido y video, y productos conexos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>265101</td>
+	    <td>Fabricacion de instrumentos y aparatos para medir, verificar, ensayar, navegar y otros fines, excepto el equipo de control de procesos industriales </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>265102</td>
+	    <td>Fabricacion de equipo de control de procesos industriales </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>265200</td>
+	    <td>Fabricacion de relojes</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>266010</td>
+	    <td>Fabricacion de equipo medico y quirurgico y de aparatos ortopedicos principalmente electronicos y/o electricos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>266090</td>
+	    <td>Fabricacion de equipo medico y quirurgico y de aparatos ortopedicos n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>267001</td>
+	    <td>Fabricacion de equipamiento e instrumentos opticos y sus accesorios</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>267002</td>
+	    <td>Fabricacion de aparatos y accesorios para fotografia excepto peliculas, placas y papeles sensibles</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>268000</td>
+	    <td>Fabricacion de soportes opticos y magneticos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>271010</td>
+	    <td>Fabricacion de motores, generadores y transformadores electricos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>271020</td>
+	    <td>Fabricacion de aparatos de distribucion y control de la energia electrica</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>272000</td>
+	    <td>Fabricacion de acumuladores, pilas y baterias primarias</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>273110</td>
+	    <td>Fabricacion de cables de fibra optica</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>273190</td>
+	    <td>Fabricacion de hilos y cables aislados n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>274000</td>
+	    <td>Fabricacion de lamparas electricas y equipo de iluminacion</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>275010</td>
+	    <td>Fabricacion de cocinas, calefones, estufas y calefactores no electricos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>275020</td>
+	    <td>Fabricacion de heladeras, "freezers", lavarropas y secarropas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>275091</td>
+	    <td>Fabricacion de ventiladores, extractores de aire, aspiradoras y similares</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>275092</td>
+	    <td>Fabricacion de planchas, calefactores, hornos electricos, tostadoras y otros aparatos generadores de calor</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>275099</td>
+	    <td>Fabricacion de aparatos de uso domestico n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>279000</td>
+	    <td>Fabricacion de equipo electrico n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>281100</td>
+	    <td>Fabricacion de motores y turbinas, excepto motores para aeronaves, vehiculos automotores y motocicletas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>281201</td>
+	    <td>Fabricacion de bombas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>281301</td>
+	    <td>Fabricacion de compresores; grifos y valvulas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>281400</td>
+	    <td>Fabricacion de cojinetes; engranajes; trenes de engranaje y piezas de transmision</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>281500</td>
+	    <td>Fabricacion de hornos; hogares y quemadores</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>281600</td>
+	    <td>Fabricacion de maquinaria y equipo de elevacion y manipulacion</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>281700</td>
+	    <td>Fabricacion de maquinaria y equipo de oficina, excepto equipo informatico</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>281900</td>
+	    <td>Fabricacion de maquinaria y equipo de uso general n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>282110</td>
+	    <td>Fabricacion de tractores</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>282120</td>
+	    <td>Fabricacion de maquinaria y equipo de uso agropecuario y forestal</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>282130</td>
+	    <td>Fabricacion de implementos de uso agropecuario</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>282200</td>
+	    <td>Fabricacion de maquinas herramienta</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>282300</td>
+	    <td>Fabricacion de maquinaria metalurgica</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>282400</td>
+	    <td>Fabricacion de maquinaria para la explotacion de minas y canteras y para obras de construccion</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>282500</td>
+	    <td>Fabricacion de maquinaria para la elaboracion de alimentos, bebidas y tabaco</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>282600</td>
+	    <td>Fabricacion de maquinaria para la elaboracion de productos textiles, prendas de vestir y cueros</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>282901</td>
+	    <td>Fabricacion de maquinaria para la industria del papel y las artes graficas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>282909</td>
+	    <td>Fabricacion de maquinaria y equipo de uso especial n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>291000</td>
+	    <td>Fabricacion de vehiculos automotores</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>292000</td>
+	    <td>Fabricacion de carrocerias para vehiculos automotores; fabricacion de remolques y semirremolques</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>293011</td>
+	    <td>Rectificacion de motores</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>293090</td>
+	    <td>Fabricacion de partes, piezas y accesorios para vehiculos automotores y sus motores n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>301100</td>
+	    <td>Construccion y reparacion de buques</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>301200</td>
+	    <td>Construccion y reparacion de embarcaciones de recreo y deporte</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>302000</td>
+	    <td>Fabricacion y reparacion de locomotoras y de material rodante para transporte ferroviario</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>303000</td>
+	    <td>Fabricacion y reparacion de aeronaves </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>309100</td>
+	    <td>Fabricacion de motocicletas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>309200</td>
+	    <td>Fabricacion de bicicletas y de sillones de ruedas ortopedicos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>309900</td>
+	    <td>Fabricacion de equipo de transporte n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>310010</td>
+	    <td>Fabricacion de muebles y partes de muebles, principalmente de madera</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>310020</td>
+	    <td>Fabricacion de muebles y partes de muebles, excepto los que son principalmente de madera (metal, plastico, etc.)</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>310030</td>
+	    <td>Fabricacion de somieres y colchones</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>321011</td>
+	    <td>Fabricacion de joyas finas y articulos conexos</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>321012</td>
+	    <td>Fabricacion de objetos de plateria </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>321020</td>
+	    <td>Fabricacion de bijouterie</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>322001</td>
+	    <td>Fabricacion de instrumentos de musica</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>323001</td>
+	    <td>Fabricacion de articulos de deporte</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>324000</td>
+	    <td>Fabricacion de juegos y juguetes</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>329010</td>
+	    <td>Fabricacion de lapices, lapiceras, boligrafos, sellos y articulos similares para oficinas y artistas</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>329020</td>
+	    <td>Fabricacion de escobas, cepillos y pinceles </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>329030</td>
+	    <td>Fabricacion de carteles, señales e indicadores -electricos o no-</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>329040</td>
+	    <td>Fabricacion de equipo de proteccion y seguridad, excepto calzado</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>329091</td>
+	    <td>Elaboracion de sustrato </td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>329099</td>
+	    <td>Industrias manufactureras n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>331101</td>
+	    <td>Reparacion y mantenimiento de productos de metal, excepto maquinaria y equipo</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>331210</td>
+	    <td>Reparacion y mantenimiento de maquinaria de uso general</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>331220</td>
+	    <td>Reparacion y mantenimiento de maquinaria y equipo de uso agropecuario y forestal</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>331290</td>
+	    <td>Reparacion y mantenimiento de maquinaria de uso especial n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>331301</td>
+	    <td>Reparacion y mantenimiento de instrumentos medicos, opticos y de precision; equipo fotografico, aparatos para medir, ensayar o navegar; relojes, excepto para uso personal o domestico</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>331400</td>
+	    <td>Reparacion y mantenimiento de maquinaria y aparatos electricos </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>331900</td>
+	    <td>Reparacion y mantenimiento de maquinas y equipo n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>332000</td>
+	    <td>Instalacion de maquinaria y equipos industriales</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>351110</td>
+	    <td>Generacion de energia termica convencional</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>351120</td>
+	    <td>Generacion de energia termica nuclear</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>351130</td>
+	    <td>Generacion de energia hidraulica</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>351191</td>
+	    <td>Generacion de energias a partir de biomasa</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>351199</td>
+	    <td>Generacion de energias n.c.p.</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>351201</td>
+	    <td>Transporte de energia electrica</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>351310</td>
+	    <td>Comercio mayorista de energia electrica</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>351320</td>
+	    <td>Distribucion de energia electrica</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>352010</td>
+	    <td>Fabricacion de gas y procesamiento de gas natural</td>
+	    <td>industria</td>
+	    <td>0, 0,5, 1 o 1,5% en funcion de parametros de art. 12 inc. b) Ley Tarifaria</td>
+    </tr>
+	  <tr>
+	    <td>352021</td>
+	    <td>Distribucion de combustibles gaseosos por tuberias</td>
+	    <td>0.9</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>352022</td>
+	    <td>Distribucion de gas natural -Ley Nacional Nñ 23966 -</td>
+	    <td>0.9</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>353001</td>
+	    <td>Suministro de vapor y aire acondicionado</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>360010</td>
+	    <td>Captacion, depuracion y distribucion de agua de fuentes subterraneas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>360020</td>
+	    <td>Captacion, depuracion y distribucion de agua de fuentes superficiales</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>370000</td>
+	    <td>Servicios de depuracion de aguas residuales, alcantarillado y cloacas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>381100</td>
+	    <td>Recoleccion, transporte, tratamiento y disposicion final de residuos no peligrosos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>381200</td>
+	    <td>Recoleccion, transporte, tratamiento y disposicion final de residuos peligrosos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>382010</td>
+	    <td>Recuperacion de materiales y desechos metalicos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>382020</td>
+	    <td>Recuperacion de materiales y desechos no metalicos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>390000</td>
+	    <td>Descontaminacion y otros servicios de gestion de residuos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>410011</td>
+	    <td>Construccion, reforma y reparacion de edificios residenciales</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>410021</td>
+	    <td>Construccion, reforma y reparacion de edificios no residenciales</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>421000</td>
+	    <td>Construccion, reforma y reparacion de obras de infraestructura para el transporte </td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>422100</td>
+	    <td>Perforacion de pozos de agua</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>422200</td>
+	    <td>Construccion, reforma y reparacion de redes distribucion de electricidad, gas, agua, telecomunicaciones y de otros servicios publicos</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>429010</td>
+	    <td>Construccion, reforma y reparacion de obras hidraulicas</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>429090</td>
+	    <td>Construccion de obras de ingenieria civil n.c.p.</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>431100</td>
+	    <td>Demolicion y voladura de edificios y de sus partes </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>431210</td>
+	    <td>Movimiento de suelos y preparacion de terrenos para obras</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>431220</td>
+	    <td>Perforacion y sondeo, excepto perforacion de pozos de petroleo, de gas, de minas e hidraulicos y prospeccion de yacimientos de petroleo</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>432110</td>
+	    <td>Instalacion de sistemas de iluminacion, control y señalizacion electrica para el transporte </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>432190</td>
+	    <td>Instalacion, ejecucion y mantenimiento de instalaciones electricas, electromecanicas y electronicas n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>432200</td>
+	    <td>Instalaciones de gas, agua, sanitarios y de climatizacion, con sus artefactos conexos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>432910</td>
+	    <td>Instalaciones de ascensores, montacargas y escaleras mecanicas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>432920</td>
+	    <td>Aislamiento termico, acustico, hidrico y antivibratorio</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>432990</td>
+	    <td>Instalaciones para edificios y obras de ingenieria civil n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>433010</td>
+	    <td>Instalaciones de carpinteria, herreria de obra y artistica</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>433020</td>
+	    <td>Terminacion y revestimiento de paredes y pisos</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>433030</td>
+	    <td>Colocacion de cristales en obra</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>433040</td>
+	    <td>Pintura y trabajos de decoracion</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>433090</td>
+	    <td>Terminacion de edificios n.c.p.</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>439100</td>
+	    <td>Alquiler de equipo de construccion o demolicion dotado de operarios</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>439910</td>
+	    <td>Hincado de pilotes, cimentacion y otros trabajos de hormigon armado</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>439990</td>
+	    <td>Actividades especializadas de construccion n.c.p.</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>451111</td>
+	    <td>Venta de autos, camionetas y utilitarios nuevos excepto en comision</td>
+	    <td>15</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>451112</td>
+	    <td>Venta en comision de autos, camionetas y utilitarios nuevos</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>451191</td>
+	    <td>Venta de vehiculos automotores nuevos n.c.p.</td>
+	    <td>15</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>451192</td>
+	    <td>Venta en comision de vehiculos automotores nuevos n.c.p.</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>451211</td>
+	    <td>Venta de autos, camionetas y utilitarios, usados, excepto en comision</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>451212</td>
+	    <td>Venta en comision de autos, camionetas y utilitarios, usados</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>451291</td>
+	    <td>Venta de vehiculos automotores usados n.c.p. excepto en comision</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>451292</td>
+	    <td>Venta en comision de vehiculos automotores usados n.c.p.</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>452101</td>
+	    <td>Lavado automatico y manual de vehiculos automotores</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>452210</td>
+	    <td>Reparacion de camaras y cubiertas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>452220</td>
+	    <td>Reparacion de amortiguadores, alineacion de direccion y balanceo de ruedas </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>452300</td>
+	    <td>Instalacion y reparacion de parabrisas, lunetas y ventanillas, cerraduras no electricas y grabado de cristales</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>452401</td>
+	    <td>Reparaciones electricas del tablero e instrumental; reparacion y recarga de baterias; instalacion de alarmas, radios, sistemas de climatizacion</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>452500</td>
+	    <td>Tapizado y retapizado de automotores</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>452600</td>
+	    <td>Reparacion y pintura de carrocerias; colocacion y reparacion de guardabarros y protecciones exteriores</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>452700</td>
+	    <td>Instalacion y reparacion de caños de escape y radiadores</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>452800</td>
+	    <td>Mantenimiento y reparacion de frenos y embragues</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>452910</td>
+	    <td>Instalacion y reparacion de equipos de GNC</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>452990</td>
+	    <td>Mantenimiento y reparacion del motor n.c.p.; mecanica integral </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>453100</td>
+	    <td>Venta al por mayor de partes, piezas y accesorios de vehiculos automotores</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>453210</td>
+	    <td>Venta al por menor de camaras y cubiertas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>453220</td>
+	    <td>Venta al por menor de baterias</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>453291</td>
+	    <td>Venta al por menor de partes, piezas y accesorios nuevos n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>453292</td>
+	    <td>Venta al por menor de partes, piezas y accesorios usados n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>454011</td>
+	    <td>Venta de motocicletas y de sus partes, piezas y accesorios, excepto en comision</td>
+	    <td>15</td>
+	    <td>3,5 las partes piezas y accesorios</td>
+    </tr>
+	  <tr>
+	    <td>454012</td>
+	    <td>Venta en comision de motocicletas y de sus partes, piezas y accesorios</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>454020</td>
+	    <td>Mantenimiento y reparacion de motocicletas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461011</td>
+	    <td>Venta al por mayor en comision o consignacion de cereales (incluye arroz), oleaginosas y forrajeras excepto semillas</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461012</td>
+	    <td>Venta al por mayor en comision o consignacion de semillas</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461013</td>
+	    <td>Venta al por mayor en comision o consignacion de frutas</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461014</td>
+	    <td>Acopio y acondicionamiento en comision o consignacion de cereales (incluye arroz), oleaginosas y forrajeras excepto semillas</td>
+	    <td>4.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461019</td>
+	    <td>Venta al por mayor en comision o consignacion de productos agricolas n.c.p.</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461021</td>
+	    <td>Venta al por mayor en comision o consignacion de ganado bovino en pie</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461022</td>
+	    <td>Venta al por mayor en comision o consignacion de ganado en pie excepto bovino</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461029</td>
+	    <td>Venta al por mayor en comision o consignacion de productos pecuarios n.c.p.</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461031</td>
+	    <td>Operaciones de intermediacion de carne - consignatario directo -</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461032</td>
+	    <td>Operaciones de intermediacion de carne excepto consignatario directo</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461039</td>
+	    <td>Venta al por mayor en comision o consignacion de alimentos, bebidas y tabaco n.c.p.</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461040</td>
+	    <td>Venta al por mayor en comision o consignacion de combustibles </td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461091</td>
+	    <td>Venta al por mayor en comision o consignacion de productos textiles, prendas de vestir, calzado excepto el ortopedico, articulos de marroquineria, paraguas y similares y productos de cuero n.c.p.</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461092</td>
+	    <td>Venta al por mayor en comision o consignacion de madera y materiales para la construccion</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461093</td>
+	    <td>Venta al por mayor en comision o consignacion de minerales, metales y productos quimicos industriales</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461094</td>
+	    <td>Venta al por mayor en comision o consignacion de maquinaria, equipo profesional industrial y comercial, embarcaciones y aeronaves</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461095</td>
+	    <td>Venta al por mayor en comision o consignacion de papel, carton, libros, revistas, diarios, materiales de embalaje y articulos de libreria</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>461099</td>
+	    <td>Venta al por mayor en comision o consignacion de mercaderias n.c.p.</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>462111</td>
+	    <td>Acopio de algodon</td>
+	    <td>4.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>462112</td>
+	    <td>Acopio de otros productos agropecuarios, excepto cereales</td>
+	    <td>4.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>462120</td>
+	    <td>Venta al por mayor de semillas y granos para forrajes</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>462131</td>
+	    <td>Venta al por mayor de cereales (incluye arroz), oleaginosas y forrajeras excepto semillas</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>462132</td>
+	    <td>Acopio y acondicionamiento de cereales y semillas, excepto de algodon y semillas y granos para forrajes</td>
+	    <td>4.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>462190</td>
+	    <td>Venta al por mayor de materias primas agricolas y de la silvicultura n.c.p.</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>462201</td>
+	    <td>Venta al por mayor de lanas, cueros en bruto y productos afines</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>462209</td>
+	    <td>Venta al por mayor de materias primas pecuarias n.c.p. incluso animales vivos</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463111</td>
+	    <td>Venta al por mayor de productos lacteos</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463112</td>
+	    <td>Venta al por mayor de fiambres y quesos</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463121</td>
+	    <td>Venta al por mayor de carnes rojas y derivados</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463129</td>
+	    <td>Venta al por mayor de aves, huevos y productos de granja y de la caza n.c.p.</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463130</td>
+	    <td>Venta al por mayor de pescado</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463140</td>
+	    <td>Venta al por mayor y empaque de frutas, de legumbres y hortalizas frescas</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463151</td>
+	    <td>Venta al por mayor de pan, productos de confiteria y pastas frescas</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463152</td>
+	    <td>Venta al por mayor de azucar</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463153</td>
+	    <td>Venta al por mayor de aceites y grasas</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463154</td>
+	    <td>Venta al por mayor de cafe, te, yerba mate y otras infusiones y especias y condimentos</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463159</td>
+	    <td>Venta al por mayor de productos y subproductos de molineria n.c.p.</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463160</td>
+	    <td>Venta al por mayor de chocolates, golosinas y productos para kioscos y polirrubros n.c.p., excepto cigarrillos</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463170</td>
+	    <td>Venta al por mayor de alimentos balanceados para animales</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463180</td>
+	    <td>Venta al por mayor en supermercados mayoristas de alimentos</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463191</td>
+	    <td>Venta al por mayor de frutas, legumbres y cereales secos y en conserva</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463199</td>
+	    <td>Venta al por mayor de productos alimenticios n.c.p.</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463211</td>
+	    <td>Venta al por mayor de vino</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463212</td>
+	    <td>Venta al por mayor de bebidas espiritosas</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463219</td>
+	    <td>Venta al por mayor de bebidas alcoholicas n.c.p.</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463220</td>
+	    <td>Venta al por mayor de bebidas no alcoholicas</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>463300</td>
+	    <td>Venta al por mayor de cigarrillos y productos de tabaco</td>
+	    <td>5.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464111</td>
+	    <td>Venta al por mayor de tejidos (telas)</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464112</td>
+	    <td>Venta al por mayor de articulos de merceria</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464113</td>
+	    <td>Venta al por mayor de manteleria, ropa de cama y articulos textiles para el hogar</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464114</td>
+	    <td>Venta al por mayor de tapices y alfombras de materiales textiles</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464119</td>
+	    <td>Venta al por mayor de productos textiles n.c.p.</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464121</td>
+	    <td>Venta al por mayor de prendas de vestir de cuero</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464122</td>
+	    <td>Venta al por mayor de medias y prendas de punto</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464129</td>
+	    <td>Venta al por mayor de prendas y accesorios de vestir n.c.p., excepto uniformes y ropa de trabajo</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464130</td>
+	    <td>Venta al por mayor de calzado excepto el ortopedico</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464141</td>
+	    <td>Venta al por mayor de pieles y cueros curtidos y salados</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464142</td>
+	    <td>Venta al por mayor de suelas y afines</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464149</td>
+	    <td>Venta al por mayor de articulos de marroquineria, paraguas y productos similares n.c.p.</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464150</td>
+	    <td>Venta al por mayor de uniformes y ropa de trabajo</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464211</td>
+	    <td>Venta al por mayor de libros y publicaciones</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464212</td>
+	    <td>Venta al por mayor de diarios y revistas</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464221</td>
+	    <td>Venta al por mayor de papel y productos de papel y carton excepto envases</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464222</td>
+	    <td>Venta al por mayor de envases de papel y carton</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464223</td>
+	    <td>Venta al por mayor de articulos de libreria y papeleria</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464310</td>
+	    <td>Venta al por mayor de productos farmaceuticos</td>
+	    <td>1</td>
+	    <td>medicamentos de uso humano, resto 3%</td>
+    </tr>
+	  <tr>
+	    <td>464320</td>
+	    <td>Venta al por mayor de productos cosmeticos, de tocador y de perfumeria</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464330</td>
+	    <td>Venta al por mayor de instrumental medico y odontologico y articulos ortopedicos</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464340</td>
+	    <td>Venta al por mayor de productos veterinarios</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464410</td>
+	    <td>Venta al por mayor de articulos de optica y de fotografia</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464420</td>
+	    <td>Venta al por mayor de articulos de relojeria, joyeria y fantasias</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464501</td>
+	    <td>Venta al por mayor de electrodomesticos y artefactos para el hogar excepto equipos de audio y video</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464502</td>
+	    <td>Venta al por mayor de equipos de audio, video y television</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464610</td>
+	    <td>Venta al por mayor de muebles excepto de oficina; articulos de mimbre y corcho; colchones y somieres</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464620</td>
+	    <td>Venta al por mayor de articulos de iluminacion </td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464631</td>
+	    <td>Venta al por mayor de articulos de vidrio</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464632</td>
+	    <td>Venta al por mayor de articulos de bazar y menaje excepto de vidrio</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464910</td>
+	    <td>Venta al por mayor de CD's y DVD's de audio y video grabados.</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464920</td>
+	    <td>Venta al por mayor de materiales y productos de limpieza</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464930</td>
+	    <td>Venta al por mayor de juguetes</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464940</td>
+	    <td>Venta al por mayor de bicicletas y rodados similares</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464950</td>
+	    <td>Venta al por mayor de articulos de esparcimiento y deportes</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464991</td>
+	    <td>Venta al por mayor de flores y plantas naturales y artificiales</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>464999</td>
+	    <td>Venta al por mayor de articulos de uso domestico o personal n.c.p</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465100</td>
+	    <td>Venta al por mayor de equipos, perifericos, accesorios y programas informaticos</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465210</td>
+	    <td>Venta al por mayor de equipos de telefonia y comunicaciones</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465220</td>
+	    <td>Venta al por mayor de componentes electronicos</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465310</td>
+	    <td>Venta al por mayor de maquinas, equipos e implementos de uso en los sectores agropecuario, jardineria, silvicultura, pesca y caza</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465320</td>
+	    <td>Venta al por mayor de maquinas, equipos e implementos de uso en la elaboracion de alimentos, bebidas y tabaco</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465330</td>
+	    <td>Venta al por mayor de maquinas, equipos e implementos de uso en la fabricacion de textiles, prendas y accesorios de vestir, calzado, articulos de cuero y marroquineria</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465340</td>
+	    <td>Venta al por mayor de maquinas, equipos e implementos de uso en imprentas, artes graficas y actividades conexas</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465350</td>
+	    <td>Venta al por mayor de maquinas, equipos e implementos de uso medico y paramedico</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465360</td>
+	    <td>Venta al por mayor de maquinas, equipos e implementos de uso en la industria del plastico y del caucho</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465390</td>
+	    <td>Venta al por mayor de maquinas, equipos e implementos de uso especial n.c.p. </td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465400</td>
+	    <td>Venta al por mayor de maquinas - herramienta de uso general</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465500</td>
+	    <td>Venta al por mayor de vehiculos, equipos y maquinas para el transporte ferroviario, aereo y de navegacion</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465610</td>
+	    <td>Venta al por mayor de muebles e instalaciones para oficinas</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465690</td>
+	    <td>Venta al por mayor de muebles e instalaciones para la industria, el comercio y los servicios n.c.p.</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465910</td>
+	    <td>Venta al por mayor de maquinas y equipo de control y seguridad</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465920</td>
+	    <td>Venta al por mayor de maquinaria y equipo de oficina, excepto equipo informatico</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465930</td>
+	    <td>Venta al por mayor de equipo profesional y cientifico e instrumentos de medida y de control n.c.p.</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>465990</td>
+	    <td>Venta al por mayor de maquinas, equipo y materiales conexos n.c.p.</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466111</td>
+	    <td>Venta al por mayor de combustibles para reventa comprendidos en la Ley Nñ 23.966 para automotores</td>
+	    <td>1.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466112</td>
+	    <td>Venta al por mayor de combustibles (excepto para reventa) comprendidos en la Ley Nñ 23.966, para automotores</td>
+	    <td>1.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466119</td>
+	    <td>Venta al por mayor de combustibles n.c.p. y lubricantes para automotores</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466121</td>
+	    <td>Fraccionamiento y distribucion de gas licuado</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466122</td>
+	    <td>Venta al por mayor de combustible para reventa comprendidos en la Ley Nñ 23.966; excepto para automotores</td>
+	    <td>1.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466123</td>
+	    <td>Venta al por mayor de combustibles (excepto para reventa) comprendidos en la Ley Nñ 23.966 excepto para automotores</td>
+	    <td>1.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466129</td>
+	    <td>Venta al por mayor de combustibles, lubricantes, leña y carbon, excepto gas licuado y combustibles y lubricantes para automotores</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466200</td>
+	    <td>Venta al por mayor de metales y minerales metaliferos</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466310</td>
+	    <td>Venta al por mayor de aberturas</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466320</td>
+	    <td>Venta al por mayor de productos de madera excepto muebles</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466330</td>
+	    <td>Venta al por mayor de articulos de ferreteria y materiales electricos</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466340</td>
+	    <td>Venta al por mayor de pinturas y productos conexos</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466350</td>
+	    <td>Venta al por mayor de cristales y espejos</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466360</td>
+	    <td>Venta al por mayor de articulos para plomeria, instalacion de gas y calefaccion</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466370</td>
+	    <td>Venta al por mayor de papeles para pared, revestimiento para pisos de goma, plastico y textiles, y articulos similares para la decoracion</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466391</td>
+	    <td>Venta al por mayor de articulos de loza, ceramica y porcelana de uso en construccion</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466399</td>
+	    <td>Venta al por mayor de articulos para la construccion n.c.p.</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466910</td>
+	    <td>Venta al por mayor de productos intermedios n.c.p., desperdicios y desechos textiles</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466920</td>
+	    <td>Venta al por mayor de productos intermedios n.c.p., desperdicios y desechos de papel y carton</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466931</td>
+	    <td>Venta al por mayor de articulos de plastico </td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466932</td>
+	    <td>Venta al por mayor de abonos, fertilizantes y plaguicidas</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466939</td>
+	    <td>Venta al por mayor de productos intermedios, desperdicios y desechos de vidrio, caucho, goma y quimicos n.c.p.</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466940</td>
+	    <td>Venta al por mayor de productos intermedios n.c.p., desperdicios y desechos metalicos</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>466990</td>
+	    <td>Venta al por mayor de productos intermedios, desperdicios y desechos n.c.p.</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>469010</td>
+	    <td>Venta al por mayor de insumos agropecuarios diversos</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>469090</td>
+	    <td>Venta al por mayor de mercancias n.c.p.</td>
+	    <td>3</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>471110</td>
+	    <td>Venta al por menor en hipermercados </td>
+	    <td>3.5</td>
+	    <td>4,5 bebidas alcoholicas y energizantes, 0 pan, azucar y leche liquida</td>
+    </tr>
+	  <tr>
+	    <td>471120</td>
+	    <td>Venta al por menor en supermercados</td>
+	    <td>3.5</td>
+	    <td>4,5 bebidas alcoholicas y energizantes, 0 pan, azucar y leche liquida</td>
+    </tr>
+	  <tr>
+	    <td>471130</td>
+	    <td>Venta al por menor en minimercados</td>
+	    <td>3.5</td>
+	    <td>4,5 bebidas alcoholicas y energizantes, 0 pan, azucar y leche liquida</td>
+    </tr>
+	  <tr>
+	    <td>471191</td>
+	    <td>Venta al por menor en kioscos, polirrubros y comercios no especializados n.c.p., excepto tabaco, cigarros y cigarrillos</td>
+	    <td>3.5</td>
+	    <td>4,5 bebidas alcoholicas y energizantes, 0 pan, azucar y leche liquida</td>
+    </tr>
+	  <tr>
+	    <td>471192</td>
+	    <td>Venta al por menor de tabaco, cigarros y cigarrillos en kioscos, polirrubros y comercios no especializados n.c.p.</td>
+	    <td>6</td>
+	    <td>4,5 bebidas alcoholicas y energizantes, 0 pan, azucar y leche liquida</td>
+    </tr>
+	  <tr>
+	    <td>471900</td>
+	    <td>Venta al por menor en comercios no especializados, sin predominio de productos alimenticios y bebidas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>472111</td>
+	    <td>Venta al por menor de productos lacteos</td>
+	    <td>3.5</td>
+	    <td>0 leche lñquida</td>
+    </tr>
+	  <tr>
+	    <td>472112</td>
+	    <td>Venta al por menor de fiambres y embutidos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>472120</td>
+	    <td>Venta al por menor de productos de almacen y dietetica</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>472130</td>
+	    <td>Venta al por menor de carnes rojas, menudencias y chacinados frescos</td>
+	    <td>2.5</td>
+	    <td>2,50   Carnes y menudencias   3,50   Chacinados</td>
+    </tr>
+	  <tr>
+	    <td>472140</td>
+	    <td>Venta al por menor de huevos, carne de aves y productos de granja y de la caza</td>
+	    <td>3.5</td>
+	    <td>2,50   Carnes de aves </td>
+    </tr>
+	  <tr>
+	    <td>472150</td>
+	    <td>Venta al por menor de pescados y productos de la pesca</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>472160</td>
+	    <td>Venta al por menor de frutas, legumbres y hortalizas frescas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>472171</td>
+	    <td>Venta al por menor de pan y productos de panaderia </td>
+	    <td>0,00 - 3,50</td>
+	    <td>0,00   Vta.  Cons. final de Pan   3,50   Vta. Prod. Panaderña</td>
+    </tr>
+	  <tr>
+	    <td>472172</td>
+	    <td>Venta al por menor de bombones, golosinas y demas productos de confiteria</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>472190</td>
+	    <td>Venta al por menor de productos alimenticios n.c.p., en comercios especializados</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>472200</td>
+	    <td>Venta al por menor de bebidas en comercios especializados</td>
+	    <td>3,50 - 4,50</td>
+	    <td>3,50  Bebidas no Alcohñlicas   4,50   Bebidas Alcohñlicas y energizantes</td>
+    </tr>
+	  <tr>
+	    <td>472300</td>
+	    <td>Venta al por menor de tabaco en comercios especializados</td>
+	    <td>6</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>473001</td>
+	    <td>Venta al por menor de combustible para vehiculos automotores y motocicletas, excepto en comision</td>
+	    <td>2,00 - 3,50</td>
+	    <td>2,00  Cobustibles lñquidos   3,50   Lubricantes, refrigerantes y servicios</td>
+    </tr>
+	  <tr>
+	    <td>473002</td>
+	    <td>Venta al por menor de combustible de produccion propia comprendidos en la Ley Nñ 23.966 para vehiculos automotores y motocicletas</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>473003</td>
+	    <td>Venta al por menor de combustibles n.c.p. comprendidos en la Ley Nñ 23966 para vehiculos automotores y motocicletas</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>473009</td>
+	    <td>Venta en comision al por menor de combustible para vehiculos automotores y motocicletas</td>
+	    <td>5.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>474010</td>
+	    <td>Venta al por menor de equipos, perifericos, accesorios y programas informaticos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>474020</td>
+	    <td>Venta al por menor de aparatos de telefonia y comunicacion</td>
+	    <td>5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475110</td>
+	    <td>Venta al por menor de hilados, tejidos y articulos de merceria</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475120</td>
+	    <td>Venta al por menor de confecciones para el hogar</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475190</td>
+	    <td>Venta al por menor de articulos textiles n.c.p. excepto prendas de vestir</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475210</td>
+	    <td>Venta al por menor de aberturas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475220</td>
+	    <td>Venta al por menor de maderas y articulos de madera y corcho, excepto muebles</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475230</td>
+	    <td>Venta al por menor de articulos de ferreteria y materiales electricos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475240</td>
+	    <td>Venta al por menor de pinturas y productos conexos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475250</td>
+	    <td>Venta al por menor de articulos para plomeria e instalacion de gas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475260</td>
+	    <td>Venta al por menor de cristales, espejos, mamparas y cerramientos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475270</td>
+	    <td>Venta al por menor de papeles para pared, revestimientos para pisos y articulos similares para la decoracion</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475290</td>
+	    <td>Venta al por menor de materiales de construccion n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475300</td>
+	    <td>Venta al por menor de electrodomesticos, artefactos para el hogar y equipos de audio y video</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475410</td>
+	    <td>Venta al por menor de muebles para el hogar, articulos de mimbre y corcho</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475420</td>
+	    <td>Venta al por menor de colchones y somieres</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475430</td>
+	    <td>Venta al por menor de articulos de iluminacion </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475440</td>
+	    <td>Venta al por menor de articulos de bazar y menaje</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>475490</td>
+	    <td>Venta al por menor de articulos para el hogar n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>476111</td>
+	    <td>Venta al por menor de libros</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>476112</td>
+	    <td>Venta al por menor de libros con material condicionado</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>476121</td>
+	    <td>Venta al por menor de diarios y revistas</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>476122</td>
+	    <td>Venta al por menor de diarios y revistas con material condicionado</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>476130</td>
+	    <td>Venta al por menor de papel, carton, materiales de embalaje y articulos de libreria </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>476200</td>
+	    <td>Venta al por menor de CDñs y DVDñs de audio y video grabados</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>476310</td>
+	    <td>Venta al por menor de equipos y articulos deportivos </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>476320</td>
+	    <td>Venta al por menor de armas, articulos para la caza y pesca</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>476400</td>
+	    <td>Venta al por menor de juguetes, articulos de cotillon y juegos de mesa</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477110</td>
+	    <td>Venta al por menor de ropa interior, medias, prendas para dormir y para la playa</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477120</td>
+	    <td>Venta al por menor de uniformes escolares y guardapolvos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477130</td>
+	    <td>Venta al por menor de indumentaria para bebes y niños</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477140</td>
+	    <td>Venta al por menor de indumentaria deportiva</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477150</td>
+	    <td>Venta al por menor de prendas de cuero </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477190</td>
+	    <td>Venta al por menor de prendas y accesorios de vestir n.c.p. </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477210</td>
+	    <td>Venta al por menor de articulos de talabarteria y articulos regionales</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477220</td>
+	    <td>Venta al por menor de calzado, excepto el ortopedico y el deportivo</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477230</td>
+	    <td>Venta al por menor de calzado deportivo</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477290</td>
+	    <td>Venta al por menor de articulos de marroquineria, paraguas y similares n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477311</td>
+	    <td>Venta al por menor de productos farmaceuticos y herboristeria</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477312</td>
+	    <td>Venta al por menor de medicamentos de uso humano</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477320</td>
+	    <td>Venta al por menor de productos cosmeticos, de tocador y de perfumeria</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477330</td>
+	    <td>Venta al por menor de instrumental medico y odontologico y articulos ortopedicos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477410</td>
+	    <td>Venta al por menor de articulos de optica y fotografia</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477420</td>
+	    <td>Venta al por menor de articulos de relojeria y joyeria</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477430</td>
+	    <td>Venta al por menor de bijouterie y fantasia</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477440</td>
+	    <td>Venta al por menor de flores, plantas, semillas, abonos, fertilizantes y otros productos de vivero </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477450</td>
+	    <td>Venta al por menor de materiales y productos de limpieza</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477461</td>
+	    <td>Venta al por menor de combustibles comprendidos en la ley 23.966, excepto de produccion propia y excepto para automotores y motocicletas</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477462</td>
+	    <td>Venta al por menor de combustible de produccion propia comprendidos en la ley 23.966 excepto para vehiculos automotores y motocicletas</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477469</td>
+	    <td>Venta al por menor de fuel oil, gas en garrafas, carbon y leña</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477470</td>
+	    <td>Venta al por menor de productos veterinarios, animales domesticos y alimento balanceado para mascotas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477480</td>
+	    <td>Venta al por menor de obras de arte</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477490</td>
+	    <td>Venta al por menor de articulos nuevos n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477810</td>
+	    <td>Venta al por menor de muebles usados</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477820</td>
+	    <td>Venta al por menor de libros, revistas y similares usados</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477830</td>
+	    <td>Venta al por menor de antigñedades</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477840</td>
+	    <td>Venta al por menor de oro, monedas, sellos y similares </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>477890</td>
+	    <td>Venta al por menor de articulos usados n.c.p. excepto automotores y motocicletas </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>478010</td>
+	    <td>Venta al por menor de alimentos, bebidas y tabaco en puestos moviles y mercados</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>478090</td>
+	    <td>Venta al por menor de productos n.c.p. en puestos moviles y mercados</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>479101</td>
+	    <td>Venta al por menor por internet</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>479109</td>
+	    <td>Venta al por menor por correo, television y otros medios de comunicacion n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>479900</td>
+	    <td>Venta al por menor no realizada en establecimientos n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>491110</td>
+	    <td>Servicio de transporte ferroviario urbano y suburbano de pasajeros</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>491120</td>
+	    <td>Servicio de transporte ferroviario interurbano de pasajeros</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>491201</td>
+	    <td>Servicio de transporte ferroviario de petroleo y gas</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>491209</td>
+	    <td>Servicio de transporte ferroviario de cargas</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492110</td>
+	    <td>Servicio de transporte automotor urbano y suburbano regular de pasajeros </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492120</td>
+	    <td>Servicios de transporte automotor de pasajeros mediante taxis y remises; alquiler de autos con chofer</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492130</td>
+	    <td>Servicio de transporte escolar</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492140</td>
+	    <td>Servicio de transporte automotor urbano y suburbano no regular de pasajeros de oferta libre, excepto mediante taxis y remises, alquiler de autos con chofer y transporte escolar</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492150</td>
+	    <td>Servicio de transporte automotor interurbano regular de pasajeros, E1203excepto transporte internacional</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492160</td>
+	    <td>Servicio de transporte automotor interurbano no regular de pasajeros </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492170</td>
+	    <td>Servicio de transporte automotor internacional de pasajeros </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492180</td>
+	    <td>Servicio de transporte automotor turistico de pasajeros </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492190</td>
+	    <td>Servicio de transporte automotor de pasajeros n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492210</td>
+	    <td>Servicios de mudanza</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492221</td>
+	    <td>Servicio de transporte automotor de cereales</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492229</td>
+	    <td>Servicio de transporte automotor de mercaderias a granel n.c.p.</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492230</td>
+	    <td>Servicio de transporte automotor de animales</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492240</td>
+	    <td>Servicio de transporte por camion cisterna</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492250</td>
+	    <td>Servicio de transporte automotor de mercaderias y sustancias peligrosas</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492280</td>
+	    <td>Servicio de transporte automotor urbano de carga n.c.p.</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492291</td>
+	    <td>Servicio de transporte automotor de petroleo y gas</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>492299</td>
+	    <td>Servicio de transporte automotor de cargas n.c.p.</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>493110</td>
+	    <td>Servicio de transporte por oleoductos </td>
+	    <td>&nbsp;</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>493120</td>
+	    <td>Servicio de transporte por poliductos y fueloductos</td>
+	    <td>&nbsp;</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>493200</td>
+	    <td>Servicio de transporte por gasoductos</td>
+	    <td>&nbsp;</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>501100</td>
+	    <td>Servicio de transporte maritimo de pasajeros</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>501201</td>
+	    <td>Servicio de transporte maritimo de petroleo y gas</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>501209</td>
+	    <td>Servicio de transporte maritimo de carga</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>502101</td>
+	    <td>Servicio de transporte fluvial y lacustre de pasajeros</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>502200</td>
+	    <td>Servicio de transporte fluvial y lacustre de carga</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>511000</td>
+	    <td>Servicio de transporte aereo de pasajeros</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>512000</td>
+	    <td>Servicio de transporte aereo de cargas</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>521010</td>
+	    <td>Servicios de manipulacion de carga en el ambito terrestre</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>521020</td>
+	    <td>Servicios de manipulacion de carga en el ambito portuario</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>521030</td>
+	    <td>Servicios de manipulacion de carga en el ambito aereo</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>522010</td>
+	    <td>Servicios de almacenamiento y deposito en silos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>522020</td>
+	    <td>Servicios de almacenamiento y deposito en camaras frigorificas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>522091</td>
+	    <td>Servicios de usuarios directos de zona franca</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>522092</td>
+	    <td>Servicios de gestion de depositos fiscales</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>522099</td>
+	    <td>Servicios de almacenamiento y deposito n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>523011</td>
+	    <td>Servicios de gestion aduanera realizados por despachantes de aduana</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>523019</td>
+	    <td>Servicios de gestion aduanera para el transporte de mercaderias n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>523020</td>
+	    <td>Servicios de agencias maritimas para el transporte de mercaderias</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>523031</td>
+	    <td>Servicios de gestion de agentes de transporte aduanero excepto agencias maritimas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>523032</td>
+	    <td>Servicios de operadores logisticos seguros (OLS) en el ambito aduanero</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>523039</td>
+	    <td>Servicios de operadores logisticos n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>523090</td>
+	    <td>Servicios de gestion y logistica para el transporte de mercaderias n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>524110</td>
+	    <td>Servicios de explotacion de infraestructura para el transporte terrestre, peajes y otros derechos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>524120</td>
+	    <td>Servicios de playas de estacionamiento y garajes</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>524130</td>
+	    <td>Servicios de estaciones terminales de omnibus y ferroviarias</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>524190</td>
+	    <td>Servicios complementarios para el transporte terrestre n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>524210</td>
+	    <td>Servicios de explotacion de infraestructura para el transporte maritimo, derechos de puerto</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>524220</td>
+	    <td>Servicios de guarderias nauticas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>524230</td>
+	    <td>Servicios para la navegacion</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>524290</td>
+	    <td>Servicios complementarios para el transporte maritimo n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>524310</td>
+	    <td>Servicios de explotacion de infraestructura para el transporte aereo, derechos de aeropuerto</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>524320</td>
+	    <td>Servicios de hangares y estacionamiento de aeronaves</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>524330</td>
+	    <td>Servicios para la aeronavegacion</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>524390</td>
+	    <td>Servicios complementarios para el transporte aereo n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>530010</td>
+	    <td>Servicio de correo postal</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>530090</td>
+	    <td>Servicios de mensajerias.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>551010</td>
+	    <td>Servicios de alojamiento por hora </td>
+	    <td>15</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>551021</td>
+	    <td>Servicios de alojamiento en pensiones</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>551022</td>
+	    <td>Servicios de alojamiento en hoteles, hosterias y residenciales similares, excepto por hora, que incluyen servicio de restaurante al publico</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>551023</td>
+	    <td>Servicios de alojamiento en hoteles, hosterias y residenciales similares, excepto por hora, que no incluyen servicio de restaurante al publico</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>551090</td>
+	    <td>Servicios de hospedaje temporal n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>552000</td>
+	    <td>Servicios de alojamiento en campings</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>561011</td>
+	    <td>Servicios de restaurantes y cantinas sin espectaculo </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>561012</td>
+	    <td>Servicios de restaurantes y cantinas con espectaculo </td>
+	    <td>15</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>561013</td>
+	    <td>Servicios de "fast food" y locales de venta de comidas y bebidas al paso </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>561014</td>
+	    <td>Servicios de expendio de bebidas en bares</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>561019</td>
+	    <td>Servicios de expendio de comidas y bebidas en establecimientos con servicio de mesa y/o en mostrador n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>561020</td>
+	    <td>Servicios de preparacion de comidas para llevar </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>561030</td>
+	    <td>Servicio de expendio de helados</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>561040</td>
+	    <td>Servicios de preparacion de comidas realizadas por/para vendedores ambulantes</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>562010</td>
+	    <td>Servicios de preparacion de comidas para empresas y eventos </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>562091</td>
+	    <td>Servicios de cantinas con atencion exclusiva a los empleados o estudiantes dentro de empresas o establecimientos educativos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>562099</td>
+	    <td>Servicios de comidas n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>581100</td>
+	    <td>Edicion de libros, folletos, y otras publicaciones</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>581200</td>
+	    <td>Edicion de directorios y listas de correos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>581300</td>
+	    <td>Edicion de periodicos, revistas y publicaciones periodicas</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>581900</td>
+	    <td>Edicion n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>591110</td>
+	    <td>Produccion de filmes y videocintas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>591120</td>
+	    <td>Postproduccion de filmes y videocintas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>591200</td>
+	    <td>Distribucion de filmes y videocintas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>591300</td>
+	    <td>Exhibicion de filmes y videocintas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>592000</td>
+	    <td>Servicios de grabacion de sonido y edicion de musica</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>601000</td>
+	    <td>Emision y retransmision de radio</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>602100</td>
+	    <td>Emision y retransmision de television abierta</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>602200</td>
+	    <td>Operadores de television por suscripcion.</td>
+	    <td>5.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>602310</td>
+	    <td>Emision de señales de television por suscripcion</td>
+	    <td>5.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>602320</td>
+	    <td>Produccion de programas de television</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>602900</td>
+	    <td>Servicios de television n.c.p</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>611010</td>
+	    <td>Servicios de locutorios</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>611090</td>
+	    <td>Servicios de telefonia fija, excepto locutorios</td>
+	    <td>4</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>612000</td>
+	    <td>Servicios de telefonia movil</td>
+	    <td>6.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>613000</td>
+	    <td>Servicios de telecomunicaciones via satelite, excepto servicios de transmision de television</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>614010</td>
+	    <td>Servicios de proveedores de acceso a internet</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>614090</td>
+	    <td>Servicios de telecomunicacion via internet n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>619000</td>
+	    <td>Servicios de telecomunicaciones n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>620101</td>
+	    <td>Desarrollo y puesta a punto de productos de software</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>620102</td>
+	    <td>Desarrollo de productos de software especificos</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>620103</td>
+	    <td>Desarrollo de software elaborado para procesadores</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>620104</td>
+	    <td>Servicios de consultores en informatica y suministros de programas de informatica</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>620200</td>
+	    <td>Servicios de consultores en equipo de informatica </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>620300</td>
+	    <td>Servicios de consultores en tecnologia de la informacion</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>620900</td>
+	    <td>Servicios de informatica n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>631110</td>
+	    <td>Procesamiento de datos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>631120</td>
+	    <td>Hospedaje de datos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>631190</td>
+	    <td>Actividades conexas al procesamiento y hospedaje de datos n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>631201</td>
+	    <td>Portales web por suscripcion</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>631202</td>
+	    <td>Portales web</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>639100</td>
+	    <td>Agencias de noticias</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>639900</td>
+	    <td>Servicios de informacion n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>641100</td>
+	    <td>Servicios de la banca central</td>
+	    <td>5.5</td>
+	    <td>0 para crñdito hipotecario con destino vivienda</td>
+    </tr>
+	  <tr>
+	    <td>641910</td>
+	    <td>Servicios de la banca mayorista</td>
+	    <td>5.5</td>
+	    <td>0 para crñdito hipotecario con destino vivienda</td>
+    </tr>
+	  <tr>
+	    <td>641920</td>
+	    <td>Servicios de la banca de inversion</td>
+	    <td>5.5</td>
+	    <td>0 para crñdito hipotecario con destino vivienda</td>
+    </tr>
+	  <tr>
+	    <td>641930</td>
+	    <td>Servicios de la banca minorista</td>
+	    <td>5.5</td>
+	    <td>0 para crñdito hipotecario con destino vivienda</td>
+    </tr>
+	  <tr>
+	    <td>641941</td>
+	    <td>Servicios de intermediacion financiera realizada por las compañias financieras</td>
+	    <td>5.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>641942</td>
+	    <td>Servicios de intermediacion financiera realizada por sociedades de ahorro y prestamo para la vivienda y otros inmuebles</td>
+	    <td>&nbsp;</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>641943</td>
+	    <td>Servicios de intermediacion financiera realizada por cajas de credito</td>
+	    <td>5.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>642000</td>
+	    <td>Servicios de sociedades de cartera</td>
+	    <td>&nbsp;</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>643001</td>
+	    <td>Servicios de fideicomisos</td>
+	    <td>&nbsp;</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>643009</td>
+	    <td>Fondos y sociedades de inversion y entidades financieras similares n.c.p.</td>
+	    <td>&nbsp;</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>649100</td>
+	    <td>Arrendamiento financiero, leasing</td>
+	    <td>&nbsp;</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>649210</td>
+	    <td>Actividades de credito para financiar otras actividades economicas </td>
+	    <td>10</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>649220</td>
+	    <td>Servicios de entidades de tarjeta de compra y/o credito</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>649290</td>
+	    <td>Servicios de credito n.c.p.</td>
+	    <td>10</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>649910</td>
+	    <td>Servicios de agentes de mercado abierto "puros"</td>
+	    <td>&nbsp;</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>649991</td>
+	    <td>Servicios de socios inversores en sociedades regulares segun Ley 19.550 - S.R.L., S.C.A, etc, excepto socios inversores en sociedades anonimas incluidos en 649999 - </td>
+	    <td>&nbsp;</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>649999</td>
+	    <td>Servicios de financiacion y actividades financieras n.c.p.</td>
+	    <td>10</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>651110</td>
+	    <td>Servicios de seguros de salud</td>
+	    <td>5.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>651120</td>
+	    <td>Servicios de seguros de vida</td>
+	    <td>5.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>651130</td>
+	    <td>Servicios de seguros personales excepto los de salud y de vida</td>
+	    <td>5.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>651210</td>
+	    <td>Servicios de aseguradoras de riesgo de trabajo (ART)</td>
+	    <td>5.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>651220</td>
+	    <td>Servicios de seguros patrimoniales excepto los de las aseguradoras de riesgo de trabajo (ART)</td>
+	    <td>5.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>651310</td>
+	    <td>Obras Sociales</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>651320</td>
+	    <td>Servicios de cajas de prevision social pertenecientes a asociaciones profesionales </td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>652000</td>
+	    <td>Reaseguros</td>
+	    <td>5.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>653000</td>
+	    <td>Administracion de fondos de pensiones, excepto la seguridad social obligatoria</td>
+	    <td>5.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>661111</td>
+	    <td>Servicios de mercados y cajas de valores</td>
+	    <td>&nbsp;</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>661121</td>
+	    <td>Servicios de mercados a termino</td>
+	    <td>&nbsp;</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>661131</td>
+	    <td>Servicios de bolsas de comercio</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>661910</td>
+	    <td>Servicios bursatiles de mediacion o por cuenta de terceros</td>
+	    <td>&nbsp;</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>661920</td>
+	    <td>Servicios de casas y agencias de cambio</td>
+	    <td>6</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>661930</td>
+	    <td>Servicios de sociedades calificadoras de riesgos financieros</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>661991</td>
+	    <td>Servicios de envio y recepcion de fondos desde y hacia el exterior</td>
+	    <td>&nbsp;</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>661992</td>
+	    <td>Servicios de administradoras de vales y tickets</td>
+	    <td>&nbsp;</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>661999</td>
+	    <td>Servicios auxiliares a la intermediacion financiera n.c.p.</td>
+	    <td>&nbsp;</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>662010</td>
+	    <td>Servicios de evaluacion de riesgos y daños</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>662020</td>
+	    <td>Servicios de productores y asesores de seguros </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>662090</td>
+	    <td>Servicios auxiliares a los servicios de seguros n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>663000</td>
+	    <td>Servicios de gestion de fondos a cambio de una retribucion o por contrata</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>681010</td>
+	    <td>Servicios de alquiler y explotacion de inmuebles para fiestas, convenciones y otros eventos similares </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>681020</td>
+	    <td>Servicios de alquiler de consultorios medicos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>681098</td>
+	    <td>Servicios inmobiliarios realizados por cuenta propia, con bienes urbanos propios o arrendados n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>681099</td>
+	    <td>Servicios inmobiliarios realizados por cuenta propia, con bienes rurales propios o arrendados n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>682010</td>
+	    <td>Servicios de administracion de consorcios de edificios</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>682091</td>
+	    <td>Servicios prestados por inmobiliarias</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>682099</td>
+	    <td>Servicios inmobiliarios realizados a cambio de una retribucion o por contrata n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>691001</td>
+	    <td>Servicios juridicos </td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>691002</td>
+	    <td>Servicios notariales </td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>692000</td>
+	    <td>Servicios de contabilidad, auditoria y asesoria fiscal</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>702010</td>
+	    <td>Servicios de gerenciamiento de empresas e instituciones de salud; servicios de auditoria y medicina legal; servicio de asesoramiento farmaceutico </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>702091</td>
+	    <td>Servicios de asesoramiento, direccion y gestion empresarial realizados por integrantes de los organos de administracion y/o fiscalizacion en sociedades anonimas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>702092</td>
+	    <td>Servicios de asesoramiento, direccion y gestion empresarial realizados por integrantes de cuerpos de direccion en sociedades excepto las anonimas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>702099</td>
+	    <td>Servicios de asesoramiento, direccion y gestion empresarial n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>711001</td>
+	    <td>Servicios relacionados con la construccion. </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>711002</td>
+	    <td>Servicios geologicos y de prospeccion </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>711003</td>
+	    <td>Servicios relacionados con la electronica y las comunicaciones</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>711009</td>
+	    <td>Servicios de arquitectura e ingenieria y servicios conexos de asesoramiento tecnico n.c.p.</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>712000</td>
+	    <td>Ensayos y analisis tecnicos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>721010</td>
+	    <td>Investigacion y desarrollo experimental en el campo de la ingenieria y la tecnologia</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>721020</td>
+	    <td>Investigacion y desarrollo experimental en el campo de las ciencias medicas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>721030</td>
+	    <td>Investigacion y desarrollo experimental en el campo de las ciencias agropecuarias</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>721090</td>
+	    <td>Investigacion y desarrollo experimental en el campo de las ciencias exactas y naturales n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>722010</td>
+	    <td>Investigacion y desarrollo experimental en el campo de las ciencias sociales</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>722020</td>
+	    <td>Investigacion y desarrollo experimental en el campo de las ciencias humanas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>731001</td>
+	    <td>Servicios de comercializacion de tiempo y espacio publicitario</td>
+	    <td>6</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>731009</td>
+	    <td>Servicios de publicidad n.c.p.</td>
+	    <td>6</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>732000</td>
+	    <td>Estudio de mercado, realizacion de encuestas de opinion publica</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>741000</td>
+	    <td>Servicios de diseño especializado</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>742000</td>
+	    <td>Servicios de fotografia </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>749001</td>
+	    <td>Servicios de traduccion e interpretacion</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>749002</td>
+	    <td>Servicios de representacion e intermediacion de artistas y modelos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>749003</td>
+	    <td>Servicios de representacion e intermediacion de deportistas profesionales</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>749009</td>
+	    <td>Actividades profesionales, cientificas y tecnicas n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>750000</td>
+	    <td>Servicios veterinarios</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>771110</td>
+	    <td>Alquiler de automoviles sin conductor</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>771190</td>
+	    <td>Alquiler de vehiculos automotores n.c.p., sin conductor ni operarios</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>771210</td>
+	    <td>Alquiler de equipo de transporte para via acuatica, sin operarios ni tripulacion</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>771220</td>
+	    <td>Alquiler de equipo de transporte para via aerea, sin operarios ni tripulacion</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>771290</td>
+	    <td>Alquiler de equipo de transporte n.c.p. sin conductor ni operarios </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>772010</td>
+	    <td>Alquiler de videos y video juegos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>772091</td>
+	    <td>Alquiler de prendas de vestir</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>772099</td>
+	    <td>Alquiler de efectos personales y enseres domesticos n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>773010</td>
+	    <td>Alquiler de maquinaria y equipo agropecuario y forestal, sin operarios</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>773020</td>
+	    <td>Alquiler de maquinaria y equipo para la mineria, sin operarios</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>773030</td>
+	    <td>Alquiler de maquinaria y equipo de construccion e ingenieria civil, sin operarios</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>773040</td>
+	    <td>Alquiler de maquinaria y equipo de oficina, incluso computadoras</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>773090</td>
+	    <td>Alquiler de maquinaria y equipo n.c.p., sin personal</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>774000</td>
+	    <td>Arrendamiento y gestion de bienes intangibles no financieros</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>780001</td>
+	    <td>Empresas de servicios eventuales segun Ley Nñ 24.013 (arts. 75 a 80)</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>780009</td>
+	    <td>Obtencion y dotacion de personal</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>791101</td>
+	    <td>Servicios minoristas de agencias de viajes excepto en comision</td>
+	    <td>6</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>791102</td>
+	    <td>Servicios minoristas de agencias de viajes en comision</td>
+	    <td>6</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>791201</td>
+	    <td>Servicios mayoristas de agencias de viajes excepto en comision</td>
+	    <td>6</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>791202</td>
+	    <td>Servicios mayoristas de agencias de viajes en comision</td>
+	    <td>6</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>791901</td>
+	    <td>Servicios de turismo aventura</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>791909</td>
+	    <td>Servicios complementarios de apoyo turistico n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>801010</td>
+	    <td>Servicios de transporte de caudales y objetos de valor</td>
+	    <td>2</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>801020</td>
+	    <td>Servicios de sistemas de seguridad </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>801090</td>
+	    <td>Servicios de seguridad e investigacion n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>811000</td>
+	    <td>Servicio combinado de apoyo a edificios</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>812010</td>
+	    <td>Servicios de limpieza general de edificios </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>812020</td>
+	    <td>Servicios de desinfeccion y exterminio de plagas en el ambito urbano</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>812091</td>
+	    <td>Servicios de limpieza de medios de transporte excepto automoviles</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>812099</td>
+	    <td>Servicios de limpieza n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>813000</td>
+	    <td>Servicios de jardineria y mantenimiento de espacios verdes</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>821100</td>
+	    <td>Servicios combinados de gestion administrativa de oficinas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>821900</td>
+	    <td>Servicios de fotocopiado, preparacion de documentos y otros servicios de apoyo de oficina</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>822001</td>
+	    <td>Servicios de call center por gestion de venta de bienes y/o prestacion de servicios</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>822009</td>
+	    <td>Servicios de call center n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>823000</td>
+	    <td>Servicios de organizacion de convenciones y exposiciones comerciales, excepto culturales y deportivos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>829100</td>
+	    <td>Servicios de agencias de cobro y calificacion crediticia</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>829200</td>
+	    <td>Servicios de envase y empaque </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>829901</td>
+	    <td>Servicios de recarga de saldo o credito para consumo de bienes o servicios</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>829909</td>
+	    <td>Servicios empresariales n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>841100</td>
+	    <td>Servicios generales de la Administracion Publica</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>841200</td>
+	    <td>Servicios para la regulacion de las actividades sanitarias, educativas, culturales, y restantes servicios sociales, excepto seguridad social obligatoria </td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>841300</td>
+	    <td>Servicios para la regulacion de la actividad economica</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>841900</td>
+	    <td>Servicios auxiliares para los servicios generales de la Administracion Publica </td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>842100</td>
+	    <td>Servicios de asuntos exteriores</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>842200</td>
+	    <td>Servicios de defensa</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>842300</td>
+	    <td>Servicios para el orden publico y la seguridad</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>842400</td>
+	    <td>Servicios de justicia</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>842500</td>
+	    <td>Servicios de proteccion civil</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>843000</td>
+	    <td>Servicios de la seguridad social obligatoria, excepto obras sociales</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>851010</td>
+	    <td>Guarderias y jardines maternales</td>
+	    <td>3.5</td>
+	    <td>0 si estan en programa de enseñanza oficial</td>
+    </tr>
+	  <tr>
+	    <td>851020</td>
+	    <td>Enseñanza inicial, jardin de infantes y primaria</td>
+	    <td>3.5</td>
+	    <td>0 si estan en programa de enseñanza oficial</td>
+    </tr>
+	  <tr>
+	    <td>852100</td>
+	    <td>Enseñanza secundaria de formacion general</td>
+	    <td>3.5</td>
+	    <td>0 si estan en programa de enseñanza oficial</td>
+    </tr>
+	  <tr>
+	    <td>852200</td>
+	    <td>Enseñanza secundaria de formacion tecnica y profesional</td>
+	    <td>3.5</td>
+	    <td>0 si estan en programa de enseñanza oficial</td>
+    </tr>
+	  <tr>
+	    <td>853100</td>
+	    <td>Enseñanza terciaria</td>
+	    <td>3.5</td>
+	    <td>0 si estan en programa de enseñanza oficial</td>
+    </tr>
+	  <tr>
+	    <td>853201</td>
+	    <td>Enseñanza universitaria excepto formacion de posgrado</td>
+	    <td>3.5</td>
+	    <td>0 si estan en programa de enseñanza oficial</td>
+    </tr>
+	  <tr>
+	    <td>853300</td>
+	    <td>Formacion de posgrado</td>
+	    <td>3.5</td>
+	    <td>0 si estan en programa de enseñanza oficial</td>
+    </tr>
+	  <tr>
+	    <td>854910</td>
+	    <td>Enseñanza de idiomas</td>
+	    <td>3.5</td>
+	    <td>0 si estan en programa de enseñanza oficial</td>
+    </tr>
+	  <tr>
+	    <td>854920</td>
+	    <td>Enseñanza de cursos relacionados con informatica</td>
+	    <td>3.5</td>
+	    <td>0 si estan en programa de enseñanza oficial</td>
+    </tr>
+	  <tr>
+	    <td>854930</td>
+	    <td>Enseñanza para adultos, excepto discapacitados</td>
+	    <td>3.5</td>
+	    <td>0 si estan en programa de enseñanza oficial</td>
+    </tr>
+	  <tr>
+	    <td>854940</td>
+	    <td>Enseñanza especial y para discapacitados</td>
+	    <td>3.5</td>
+	    <td>0 si estan en programa de enseñanza oficial</td>
+    </tr>
+	  <tr>
+	    <td>854950</td>
+	    <td>Enseñanza de gimnasia, deportes y actividades fisicas</td>
+	    <td>3.5</td>
+	    <td>0 si estan en programa de enseñanza oficial</td>
+    </tr>
+	  <tr>
+	    <td>854960</td>
+	    <td>Enseñanza artistica</td>
+	    <td>3.5</td>
+	    <td>0 si estan en programa de enseñanza oficial</td>
+    </tr>
+	  <tr>
+	    <td>854990</td>
+	    <td>Servicios de enseñanza n.c.p.</td>
+	    <td>3.5</td>
+	    <td>0 si estan en programa de enseñanza oficial</td>
+    </tr>
+	  <tr>
+	    <td>855000</td>
+	    <td>Servicios de apoyo a la educacion</td>
+	    <td>3.5</td>
+	    <td>0 si estan en programa de enseñanza oficial</td>
+    </tr>
+	  <tr>
+	    <td>861010</td>
+	    <td>Servicios de internacion excepto instituciones relacionadas con la salud mental</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>861020</td>
+	    <td>Servicios de internacion en instituciones relacionadas con la salud mental</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>862110</td>
+	    <td>Servicios de consulta medica</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>862120</td>
+	    <td>Servicios de proveedores de atencion medica domiciliaria </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>862130</td>
+	    <td>Servicios de atencion medica en dispensarios, salitas, vacunatorios y otros locales de atencion primaria de la salud</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>862200</td>
+	    <td>Servicios odontologicos</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>863110</td>
+	    <td>Servicios de practicas de diagnostico en laboratorios</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>863120</td>
+	    <td>Servicios de practicas de diagnostico por imagenes</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>863190</td>
+	    <td>Servicios de practicas de diagnostico n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>863200</td>
+	    <td>Servicios de tratamiento </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>863300</td>
+	    <td>Servicio medico integrado de consulta, diagnostico y tratamiento</td>
+	    <td>2.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>864000</td>
+	    <td>Servicios de emergencias y traslados</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>869010</td>
+	    <td>Servicios de rehabilitacion fisica</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>869090</td>
+	    <td>Servicios relacionados con la salud humana n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>870100</td>
+	    <td>Servicios de atencion a personas con problemas de salud mental o de adicciones, con alojamiento</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>870210</td>
+	    <td>Servicios de atencion a ancianos con alojamiento</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>870220</td>
+	    <td>Servicios de atencion a personas minusvalidas con alojamiento</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>870910</td>
+	    <td>Servicios de atencion a niños y adolescentes carenciados con alojamiento</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>870920</td>
+	    <td>Servicios de atencion a mujeres con alojamiento</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>870990</td>
+	    <td>Servicios sociales con alojamiento n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>880000</td>
+	    <td>Servicios sociales sin alojamiento</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>900011</td>
+	    <td>Produccion de espectaculos teatrales y musicales</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>900021</td>
+	    <td>Composicion y representacion de obras teatrales, musicales y artisticas </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>900030</td>
+	    <td>Servicios conexos a la produccion de espectaculos teatrales y musicales </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>900040</td>
+	    <td>Servicios de agencias de ventas de entradas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>900091</td>
+	    <td>Servicios de espectaculos artisticos n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>910100</td>
+	    <td>Servicios de bibliotecas y archivos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>910200</td>
+	    <td>Servicios de museos y preservacion de lugares y edificios historicos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>910300</td>
+	    <td>Servicios de jardines botanicos, zoologicos y de parques nacionales</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>910900</td>
+	    <td>Servicios culturales n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>920001</td>
+	    <td>Servicios de recepcion de apuestas de quiniela, loteria y similares </td>
+	    <td>4.1</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>920009</td>
+	    <td>Servicios relacionados con juegos de azar y apuestas n.c.p. </td>
+	    <td>12</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>931010</td>
+	    <td>Servicios de organizacion, direccion y gestion de practicas deportivas en clubes</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>931020</td>
+	    <td>Explotacion de instalaciones deportivas, excepto clubes</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>931030</td>
+	    <td>Promocion y produccion de espectaculos deportivos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>931041</td>
+	    <td>Servicios prestados por deportistas y atletas para la realizacion de practicas deportivas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>931042</td>
+	    <td>Servicios prestados por profesionales y tecnicos para la realizacion de practicas deportivas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>931050</td>
+	    <td>Servicios de acondicionamiento fisico</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>931090</td>
+	    <td>Servicios para la practica deportiva n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>939010</td>
+	    <td>Servicios de parques de diversiones y parques tematicos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>939020</td>
+	    <td>Servicios de salones de juegos </td>
+	    <td>12</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>939030</td>
+	    <td>Servicios de salones de baile, discotecas y similares</td>
+	    <td>15</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>939090</td>
+	    <td>Servicios de entretenimiento n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>941100</td>
+	    <td>Servicios de organizaciones empresariales y de empleadores </td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>941200</td>
+	    <td>Servicios de organizaciones profesionales</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>942000</td>
+	    <td>Servicios de sindicatos</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>949100</td>
+	    <td>Servicios de organizaciones religiosas</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>949200</td>
+	    <td>Servicios de organizaciones politicas</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>949910</td>
+	    <td>Servicios de mutuales, excepto mutuales de salud y financieras</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>949920</td>
+	    <td>Servicios de consorcios de edificios</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>949930</td>
+	    <td>Servicios de cooperativas cuando realizan varias actividades</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>949990</td>
+	    <td>Servicios de asociaciones n.c.p.</td>
+	    <td>0</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>951100</td>
+	    <td>Reparacion y mantenimiento de equipos informaticos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>951200</td>
+	    <td>Reparacion y mantenimiento de equipos de comunicacion</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>952100</td>
+	    <td>Reparacion de articulos electricos y electronicos de uso domestico</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>952200</td>
+	    <td>Reparacion de calzado y articulos de marroquineria</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>952300</td>
+	    <td>Reparacion de tapizados y muebles</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>952910</td>
+	    <td>Reforma y reparacion de cerraduras, duplicacion de llaves. Cerrajerias</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>952920</td>
+	    <td>Reparacion de relojes y joyas. Relojerias</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>952990</td>
+	    <td>Reparacion de efectos personales y enseres domesticos n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>960101</td>
+	    <td>Servicios de limpieza de prendas prestado por tintorerias rapidas</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>960102</td>
+	    <td>Lavado y limpieza de articulos de tela, cuero y/o de piel, incluso la limpieza en seco</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>960201</td>
+	    <td>Servicios de peluqueria</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>960202</td>
+	    <td>Servicios de tratamiento de belleza, excepto los de peluqueria</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>960300</td>
+	    <td>Pompas funebres y servicios conexos</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>960910</td>
+	    <td>Servicios de centros de estetica, spa y similares</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>960990</td>
+	    <td>Servicios personales n.c.p.</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>970000</td>
+	    <td>Servicios de hogares privados que contratan servicio domestico</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+	  <tr>
+	    <td>990000</td>
+	    <td>Servicios de organizaciones y organos extraterritoriales</td>
+	    <td>3.5</td>
+	    <td>-</td>
+    </tr>
+  </table>
+	<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+</div>
+</body>
+</html>
